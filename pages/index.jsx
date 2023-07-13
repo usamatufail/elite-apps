@@ -11,7 +11,7 @@ export default function Home() {
     <Layout>
       <Banner />
       <DevelopServices />
-      {/* <Application /> */}
+      <Application />
       <DigitalServices />
       <OurProcess />
     </Layout>
