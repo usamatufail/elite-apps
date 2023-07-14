@@ -5,6 +5,7 @@ import {
   Clients,
   DevelopServices,
   DigitalServices,
+  Industries,
   OurProcess,
   Technologies,
 } from "~/containers";
@@ -18,6 +19,7 @@ export default function Home() {
       <Technologies />
       <OurProcess />
       <Clients />
+      <Industries />
     </Layout>
   );
 }
