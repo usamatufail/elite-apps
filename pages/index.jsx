@@ -1,3 +1,4 @@
+import { Element } from "react-scroll";
 import { Layout } from "~/components";
 import {
   Application,
@@ -13,17 +14,21 @@ import {
 } from "~/containers";
 export default function Home() {
   return (
-    <Layout>
-      <Banner />
-      <DevelopServices />
-      <Application />
-      <DigitalServices />
-      <Technologies />
-      <OurProcess />
-      <Clients />
-      <Industries />
-      <Journey />
-      <Message />
-    </Layout>
+    <Element>
+      <div id="home">
+        <Layout>
+          <Banner />
+          <DevelopServices />
+          <Application />
+          <DigitalServices />
+          <Technologies />
+          <OurProcess />
+          <Clients />
+          <Industries />
+          <Journey />
+          <Message />
+        </Layout>
+      </div>
+    </Element>
   );
 }
