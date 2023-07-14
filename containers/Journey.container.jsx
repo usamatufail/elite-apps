@@ -63,9 +63,8 @@ export const Journey = () => {
 const Card = ({ img, heading, text }) => {
   return (
     <div className="flex gap-[10px] md:gap-[2px] xl:min-w-[250px] xl:h-[80px]">
-      <Zoom>
-        <img src={img} alt={text} className="w-[70px] h-[60px] md:w-[unset]" />
-      </Zoom>
+      <img src={img} alt={text} className="w-[70px] h-[60px] md:w-[unset]" />
+
       <div className="flex flex-col gap-[2px] md:gap-[4px]">
         <Animate>
           <h1 className="text-[#fff] font-body text-[24px] md:text-[30px] font-[500]">

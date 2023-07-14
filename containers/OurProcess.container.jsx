@@ -19,7 +19,7 @@ export const OurProcess = () => {
           </Zoom>
         </div>
         <Zoom>
-          <img src="/info.png" alt="Project timline ingo" />
+          <img src="/info-mobile.png" alt="Project timline ingo" />
         </Zoom>
         <div className="flex justify-center mt-[20px]">
           <Zoom>
