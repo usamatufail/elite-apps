@@ -63,7 +63,11 @@ export const Journey = () => {
 const Card = ({ img, heading, text }) => {
   return (
     <div className="flex gap-[10px] md:gap-[2px] xl:min-w-[250px] xl:h-[80px]">
-      <img src={img} alt={text} className="w-[70px] h-[60px] md:w-[unset]" />
+      <img
+        src={img}
+        alt={text}
+        className="w-[70px] h-[60px] md:w-[unset] object-cover"
+      />
 
       <div className="flex flex-col gap-[2px] md:gap-[4px]">
         <Animate>
