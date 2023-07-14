@@ -7,6 +7,7 @@ import {
   DigitalServices,
   Industries,
   Journey,
+  Message,
   OurProcess,
   Technologies,
 } from "~/containers";
@@ -22,6 +23,7 @@ export default function Home() {
       <Clients />
       <Industries />
       <Journey />
+      <Message />
     </Layout>
   );
 }
