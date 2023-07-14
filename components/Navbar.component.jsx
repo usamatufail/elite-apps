@@ -46,7 +46,7 @@ export const Navbar = () => {
 const MobileNav = () => {
   const { isOpen, openDrawer, closeDrawer } = useDrawer();
   return (
-    <nav className="md:hidden sticky top-0 flex items-center justify-between px-[1rem] z-30 overflow-hidden mt-[10px]">
+    <nav className="md:hidden top-0 relative flex items-center justify-between px-[1rem] z-30 overflow-hidden mt-[10px]">
       {/* Drawer For Links */}
       <Drawer
         open={isOpen}
@@ -72,7 +72,7 @@ const MobileNav = () => {
 
 export const DesktopNav = () => {
   return (
-    <nav className="hidden md:block h-[80px] sticky top-0 z-10 px-[1rem] w-full md:px-[55px] py-[12px]">
+    <nav className="hidden md:block relative h-[80px] top-0 z-10 px-[1rem] w-full md:px-[55px] py-[12px]">
       <div className="flex justify-between items-center w-full">
         <div className="flex gap-[5px]">
           <img src="/svg/map.icon.svg" alt="map" />
@@ -86,7 +86,7 @@ export const DesktopNav = () => {
           <img src="/svg/mail.icon.svg" alt="map" />
           <Animate>
             <p className="font-body text-[14px] text-[white] font-normal">
-              Lsupport@eliteapps.com
+              support@eliteapps.com
             </p>
           </Animate>
         </div>
