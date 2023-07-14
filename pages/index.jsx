@@ -3,7 +3,6 @@ import { Layout } from "~/components";
 import {
   Application,
   Banner,
-  Clients,
   DevelopServices,
   DigitalServices,
   Industries,
@@ -24,7 +23,6 @@ export default function Home() {
           <DigitalServices />
           <Technologies />
           <OurProcess />
-          {/* <Clients /> */}
           <Industries />
           <Message />
         </Layout>

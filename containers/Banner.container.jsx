@@ -23,26 +23,15 @@ const data = [
 export const Banner = () => {
   return (
     <section className=" bg-[url('/banner-bg.png')] bg-cover bg-no-repeat relative z-0 -mt-[100px] flex flex-col gap-[30px] justify-center items-center pb-[40px] px-[20px]">
-      {/* <Animate>
-        <p className="font-body text-[20px] font-[400] uppercase text-center text-[#fff] mt-[150px]">
-          WELCOME TO <strong>ELITE APPS</strong>
-          <br />
-          Your one-stop solution for all your APP DEVELOPMENT needs
-        </p>
-      </Animate> */}
       <Animate>
         <h1 className="text-center font-body text-[28px] md:text-[64px] font-[700] drop-shadow-[5px_5px_10px_0px_rgba(0,0,0,0.15)] leading-[-1.28px] text-[#fff] mt-[150px] px-[10px]">
-          We Build Elite Websites and Apps
+          We Build Elite Level Websites and Apps
         </h1>
       </Animate>
-      {/* <Animate>
-        <h1 className="text-center font-body text-[28px] md:text-[64px] font-[700] drop-shadow-[5px_5px_10px_0px_rgba(0,0,0,0.15)] leading-[-1.28px] text-[#fff] mt-[150px]">
-          We Build Elite Websites and Apps
-        </h1>
-      </Animate> */}
+
       <Animate>
         <img
-          src="/trust.png"
+          src="/trust1.png"
           alt="trust"
           className="max-w-[300px] md:max-w-[400px]"
         />

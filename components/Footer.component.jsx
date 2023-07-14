@@ -15,7 +15,23 @@ export const Footer = () => {
             <div className="flex justify-center gap-[8px]">
               <img src="/svg/map1.icon.svg" alt="map" />
               <p className="text-[#fff] font-body text-[18px] font-[500]">
-                Laguna Beach, California, US
+                California, US
+              </p>
+            </div>
+          </Animate>
+          <Animate>
+            <div className="flex justify-center gap-[8px]">
+              <img src="/svg/map1.icon.svg" alt="map" />
+              <p className="text-[#fff] font-body text-[18px] font-[500]">
+                New York, US
+              </p>
+            </div>
+          </Animate>
+          <Animate>
+            <div className="flex justify-center gap-[8px]">
+              <img src="/svg/map1.icon.svg" alt="map" />
+              <p className="text-[#fff] font-body text-[18px] font-[500]">
+                Miami, US
               </p>
             </div>
           </Animate>
@@ -31,7 +47,7 @@ export const Footer = () => {
       </div>
       <div className="grid md:grid-cols-3 gap-[20px] md:gap-[150px] max-w-[1200px] m-auto mt-[20px]">
         <div className="flex flex-col items-center md:items-start gap-[20px]">
-          <div className="flex items-center md:items-start  flex-col gap-[12px]">
+          <div className="hidden md:flex items-center md:items-start  flex-col gap-[12px]">
             <Animate>
               <h2 className="text-[#fff] font-body text-[22px]">About</h2>
             </Animate>
