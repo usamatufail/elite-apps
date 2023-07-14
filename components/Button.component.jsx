@@ -1,6 +1,8 @@
+import Link from "next/link";
+
 export const Button = ({ onClick }) => {
   return (
-    <a href="">
+    <Link href="/inquire">
       <button
         onClick={onClick}
         className={`bg-[#031221] text-white 
@@ -9,6 +11,6 @@ export const Button = ({ onClick }) => {
       >
         Inqure Now
       </button>
-    </a>
+    </Link>
   );
 };

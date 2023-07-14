@@ -20,3 +20,13 @@ html {
   /* 62.5% of 16px browser font size is 10px */
   font-size: 62.5%;
 }
+
+
+.form-container {
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.form-container iframe {
+  height: calc(100vh) !important;
+}

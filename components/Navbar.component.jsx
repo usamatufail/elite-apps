@@ -1,7 +1,9 @@
 import { Link } from "react-scroll";
+import NextLink from "next/link";
 import { Animate, Zoom } from "./Animate.component";
 import { Drawer, useDrawer } from "./Drawer.component";
 import { HiBars3BottomRight } from "react-icons/hi2";
+import { useRouter } from "next/router";
 
 const linkData = [
   {
@@ -28,10 +30,10 @@ const linkData = [
     link: "Insdustories",
     to: "industories",
   },
-  {
-    link: "Journey",
-    to: "journey",
-  },
+  // {
+  //   link: "Journey",
+  //   to: "journey",
+  // },
 ];
 
 export const Navbar = () => {
@@ -108,6 +110,10 @@ export const DesktopNav = () => {
 const Links = ({ isMobile = false, onClick = () => {} }) => {
   const linkClass = ` text-[1.6rem] md:p-[1rem] md:pb-[12px] text-white font-[500] cursor-pointer font-body transition-bg duration-500 flex items-center border-b-[4px] border-b-[transparent] `;
   const hoverClass = ` hover:border-b-[#fff] hover:border-b-solid`;
+  const router = useRouter();
+
+  console.log(router.pathname);
+
   return (
     <div
       className={`flex ${
@@ -118,18 +124,26 @@ const Links = ({ isMobile = false, onClick = () => {} }) => {
     >
       {linkData.map((link) => {
         return (
-          <Link
-            key={link?.link}
-            to={link.to}
-            activeClass="active"
-            className={`${linkClass} ${hoverClass}`}
-            onClick={onClick}
-            spy={true}
-            smooth={true}
-            duration={500}
-          >
-            {link?.link}
-          </Link>
+          <>
+            {router.pathname === "/inquire" ? (
+              <NextLink href="/" className={`${linkClass} ${hoverClass}`}>
+                {link?.link}
+              </NextLink>
+            ) : (
+              <Link
+                key={link?.link}
+                to={link.to}
+                activeClass="active"
+                className={`${linkClass} ${hoverClass}`}
+                onClick={onClick}
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
+                {link?.link}
+              </Link>
+            )}
+          </>
         );
       })}
     </div>

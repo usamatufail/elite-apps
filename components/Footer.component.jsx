@@ -57,15 +57,15 @@ export const Footer = () => {
         </div>
         <div className="flex flex-col items-center md:items-start gap-[20px]">
           <h2 className="text-[#fff] font-body text-[22px]">
-            Have A Question?
+            Lets Get Started
           </h2>
-          <Link href="/">
+          <Link href="/inquire">
             <button
               className={`bg-[#1D78F2] text-white 
             font-[500]
             text-[18px] p-[1.5rem]  rounded-[8px] px-[40px] md:px-[80px] py-[16px]`}
             >
-              Book A Call
+              Inquire Now
             </button>
           </Link>
         </div>
