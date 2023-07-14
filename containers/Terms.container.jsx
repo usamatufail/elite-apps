@@ -1,52 +1,65 @@
+import { Animate } from "~/components";
+
 /* eslint-disable react/no-unescaped-entities */
 export const Terms = () => {
   return (
     <section className="md:min-h-[100vh] relative z-0 -mt-[100px] flex flex-col gap-[20px] py-[40px] px-[20px] bg-[#1D78F2] md:px-[60px] lg:px-[120px]  xl:px-[150px] 2xl:px-[200px]">
       <div className="flex flex-col gap-[12px] mt-[80px] md:mt-[150px]">
-        <h1 className="text-[#fff] text-[40px] font-[500] capitalize font-body">
-          Terms and Conditions
-        </h1>
-        <p className="text-[#fff] font-[400] font-body text-[16px]">
-          Welcome to EliteApps.com! These terms and conditions outline the rules
-          and regulations for the use of Elite Apps Technologies's website,
-          located at https://www.eliteapps.com/. By accessing this website, we
-          assume you accept these terms and conditions. If you do not agree to
-          all of the terms and conditions stated on this page, please do not
-          continue to use EliteApps.com. The following terminology applies to
-          these Terms and Conditions, Privacy Statement, and Disclaimer Notice
-          and all agreements: "Client," "You," and "Your" refer to you, the
-          person accessing this website and compliant with the Company's terms
-          and conditions. "The Company," "Ourselves," "We," "Our," and "Us"
-          refer to our Company. "Party," "Parties," or "Us" refer to both the
-          Client and ourselves. All terms refer to the offer, acceptance, and
-          consideration of payment necessary to undertake the process of our
-          assistance to the Client in the most appropriate manner for the
-          express purpose of meeting the Client's needs in respect to the
-          provision of the Company's stated services, in accordance with and
-          subject to the prevailing law of the United States. Any use of the
-          above terminology or other words in the singular, plural,
-          capitalization and/or he/she or they are taken as interchangeable and
-          therefore as referring to the same.
-        </p>
+        <Animate>
+          <h1 className="text-[#fff] text-[40px] font-[500] capitalize font-body">
+            Terms and Conditions
+          </h1>
+        </Animate>
+        <Animate>
+          <p className="text-[#fff] font-[400] font-body text-[16px]">
+            Welcome to EliteApps.com! These terms and conditions outline the
+            rules and regulations for the use of Elite Apps Technologies's
+            website, located at https://www.eliteapps.com/. By accessing this
+            website, we assume you accept these terms and conditions. If you do
+            not agree to all of the terms and conditions stated on this page,
+            please do not continue to use EliteApps.com. The following
+            terminology applies to these Terms and Conditions, Privacy
+            Statement, and Disclaimer Notice and all agreements: "Client,"
+            "You," and "Your" refer to you, the person accessing this website
+            and compliant with the Company's terms and conditions. "The
+            Company," "Ourselves," "We," "Our," and "Us" refer to our Company.
+            "Party," "Parties," or "Us" refer to both the Client and ourselves.
+            All terms refer to the offer, acceptance, and consideration of
+            payment necessary to undertake the process of our assistance to the
+            Client in the most appropriate manner for the express purpose of
+            meeting the Client's needs in respect to the provision of the
+            Company's stated services, in accordance with and subject to the
+            prevailing law of the United States. Any use of the above
+            terminology or other words in the singular, plural, capitalization
+            and/or he/she or they are taken as interchangeable and therefore as
+            referring to the same.
+          </p>
+        </Animate>
       </div>
       <div className="flex flex-col gap-[12px]">
-        <h1 className="text-[#fff] text-[40px] font-[500] capitalize font-body">
-          Cookies
-        </h1>
-        <p className="text-[#fff] font-[400] font-body text-[16px]">
-          We employ the use of cookies. By accessing EliteApps.com, you agree to
-          use cookies in accordance with Elite Apps Technologies' Privacy
-          Policy. Most interactive websites use cookies to retrieve the user's
-          details for each visit. Cookies are used by our website to enable the
-          functionality of certain areas and make it easier for people visiting
-          our website. Some of our affiliate/advertising partners may also use
-          cookies.
-        </p>
+        <Animate>
+          <h1 className="text-[#fff] text-[40px] font-[500] capitalize font-body">
+            Cookies
+          </h1>
+        </Animate>
+        <Animate>
+          <p className="text-[#fff] font-[400] font-body text-[16px]">
+            We employ the use of cookies. By accessing EliteApps.com, you agree
+            to use cookies in accordance with Elite Apps Technologies' Privacy
+            Policy. Most interactive websites use cookies to retrieve the user's
+            details for each visit. Cookies are used by our website to enable
+            the functionality of certain areas and make it easier for people
+            visiting our website. Some of our affiliate/advertising partners may
+            also use cookies.
+          </p>
+        </Animate>
       </div>
       <div className="flex flex-col gap-[12px]">
-        <h1 className="text-[#fff] text-[40px] font-[500] capitalize font-body">
-          License
-        </h1>
+        <Animate>
+          <h1 className="text-[#fff] text-[40px] font-[500] capitalize font-body">
+            License
+          </h1>
+        </Animate>
         <p className="text-[#fff] font-[400] font-body text-[16px]">
           Unless otherwise stated, Elite Apps Technologies and/or its licensors
           own the intellectual property rights for all material on
@@ -103,9 +116,11 @@ export const Terms = () => {
         </p>
       </div>
       <div className="flex flex-col gap-[12px]">
-        <h1 className="text-[#fff] text-[40px] font-[500] capitalize font-body">
-          Hyperlinking To Our Content
-        </h1>
+        <Animate>
+          <h1 className="text-[#fff] text-[40px] font-[500] capitalize font-body">
+            Hyperlinking To Our Content
+          </h1>
+        </Animate>
         <p className="text-[#fff] font-[400] font-body text-[16px]">
           The following organizations may link to our website without prior
           written approval:
@@ -168,63 +183,79 @@ export const Terms = () => {
         </p>
       </div>
       <div className="flex flex-col gap-[12px]">
-        <h1 className="text-[#fff] text-[40px] font-[500] capitalize font-body">
-          IFrames
-        </h1>
-        <p className="text-[#fff] font-[400] font-body text-[16px]">
-          Without prior approval and written permission, you may not create
-          frames around our webpages that alter the visual presentation or
-          appearance of our website.
-        </p>
+        <Animate>
+          <h1 className="text-[#fff] text-[40px] font-[500] capitalize font-body">
+            IFrames
+          </h1>
+        </Animate>
+        <Animate>
+          <p className="text-[#fff] font-[400] font-body text-[16px]">
+            Without prior approval and written permission, you may not create
+            frames around our webpages that alter the visual presentation or
+            appearance of our website.
+          </p>
+        </Animate>
       </div>
       <div className="flex flex-col gap-[12px]">
-        <h1 className="text-[#fff] text-[40px] font-[500] capitalize font-body">
-          Content Liability
-        </h1>
-        <p className="text-[#fff] font-[400] font-body text-[16px]">
-          We shall not be held responsible for any content that appears on your
-          website. You agree to protect and defend us against all claims that
-          arise on your website. No link(s) should appear on any website that
-          may be interpreted as libelous, obscene, or criminal or which
-          infringes, violates, or advocates the infringement or other violation
-          of any third-party rights.
-        </p>
+        <Animate>
+          <h1 className="text-[#fff] text-[40px] font-[500] capitalize font-body">
+            Content Liability
+          </h1>
+        </Animate>
+        <Animate>
+          <p className="text-[#fff] font-[400] font-body text-[16px]">
+            We shall not be held responsible for any content that appears on
+            your website. You agree to protect and defend us against all claims
+            that arise on your website. No link(s) should appear on any website
+            that may be interpreted as libelous, obscene, or criminal or which
+            infringes, violates, or advocates the infringement or other
+            violation of any third-party rights.
+          </p>
+        </Animate>
       </div>
       <div className="flex flex-col gap-[12px]">
-        <h1 className="text-[#fff] text-[40px] font-[500] capitalize font-body">
-          Removal Of Links From Our Website
-        </h1>
-        <p className="text-[#fff] font-[400] font-body text-[16px]">
-          If you find any link on our website that is offensive for any reason,
-          you are free to contact and inform us at any moment. We will consider
-          requests to remove links, but we are not obligated to do so or to
-          respond to you directly. We do not ensure that the information on this
-          website is correct, and we do not warrant its completeness or
-          accuracy. Nor do we promise to ensure that the website remains
-          available or that the material on the website is kept up to date.
-        </p>
+        <Animate>
+          <h1 className="text-[#fff] text-[40px] font-[500] capitalize font-body">
+            Removal Of Links From Our Website
+          </h1>
+        </Animate>
+        <Animate>
+          <p className="text-[#fff] font-[400] font-body text-[16px]">
+            If you find any link on our website that is offensive for any
+            reason, you are free to contact and inform us at any moment. We will
+            consider requests to remove links, but we are not obligated to do so
+            or to respond to you directly. We do not ensure that the information
+            on this website is correct, and we do not warrant its completeness
+            or accuracy. Nor do we promise to ensure that the website remains
+            available or that the material on the website is kept up to date.
+          </p>
+        </Animate>
       </div>
       <div className="flex flex-col gap-[12px]">
-        <h1 className="text-[#fff] text-[40px] font-[500] capitalize font-body">
-          Disclaimer
-        </h1>
-        <p className="text-[#fff] font-[400] font-body text-[16px]">
-          To the maximum extent permitted by applicable law, we exclude all
-          representations, warranties, and conditions relating to our website
-          and the use of this website. Nothing in this disclaimer will: Limit or
-          exclude our or your liability for death or personal injury Limit or
-          exclude our or your liability for fraud or fraudulent
-          misrepresentation Limit any of our or your liabilities in any way that
-          is not permitted under applicable law Exclude any of our or your
-          liabilities that may not be excluded under applicable law. As long as
-          the website and the information and services on the website are
-          provided free of charge, we will not be liable for any loss or damage
-          of any nature. <br />
-          Please note that these terms and conditions are provided as a general
-          reference and may need to be tailored to your specific use case. It is
-          advisable to consult with legal professionals to ensure compliance
-          with applicable laws and regulations.
-        </p>
+        <Animate>
+          <h1 className="text-[#fff] text-[40px] font-[500] capitalize font-body">
+            Disclaimer
+          </h1>
+        </Animate>
+        <Animate>
+          <p className="text-[#fff] font-[400] font-body text-[16px]">
+            To the maximum extent permitted by applicable law, we exclude all
+            representations, warranties, and conditions relating to our website
+            and the use of this website. Nothing in this disclaimer will: Limit
+            or exclude our or your liability for death or personal injury Limit
+            or exclude our or your liability for fraud or fraudulent
+            misrepresentation Limit any of our or your liabilities in any way
+            that is not permitted under applicable law Exclude any of our or
+            your liabilities that may not be excluded under applicable law. As
+            long as the website and the information and services on the website
+            are provided free of charge, we will not be liable for any loss or
+            damage of any nature. <br />
+            Please note that these terms and conditions are provided as a
+            general reference and may need to be tailored to your specific use
+            case. It is advisable to consult with legal professionals to ensure
+            compliance with applicable laws and regulations.
+          </p>
+        </Animate>
       </div>
     </section>
   );
