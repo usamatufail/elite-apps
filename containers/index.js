@@ -8,3 +8,5 @@ export { Clients } from "./Clients.container";
 export { Industries } from "./Industories.container";
 export { Journey } from "./Journey.container";
 export { Message } from "./Message.container";
+export { Terms } from "./Terms.container";
+export { Privacies } from "./Privacies.container";

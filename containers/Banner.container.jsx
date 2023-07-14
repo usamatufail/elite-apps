@@ -21,20 +21,24 @@ const data = [
 
 export const Banner = () => {
   return (
-    <section className="min-h-[100vh] bg-[url('/banner-bg.png')] bg-cover bg-no-repeat relative z-0 -mt-[100px] flex flex-col gap-[20px] justify-center items-center pb-[40px] px-[20px]">
-      <Animate>
+    <section className="md:min-h-[100vh] bg-[url('/banner-bg.png')] bg-cover bg-no-repeat relative z-0 -mt-[100px] flex flex-col gap-[20px] justify-center items-center pb-[40px] px-[20px]">
+      {/* <Animate>
         <p className="font-body text-[20px] font-[400] uppercase text-center text-[#fff] mt-[150px]">
           WELCOME TO <strong>ELITE APPS</strong>
           <br />
           Your one-stop solution for all your APP DEVELOPMENT needs
         </p>
-      </Animate>
+      </Animate> */}
       <Animate>
-        <h1 className="text-center font-body text-[28px] md:text-[64px] font-[700] drop-shadow-[5px_5px_10px_0px_rgba(0,0,0,0.15)] leading-[-1.28px] text-[#fff]">
-          We Transform Your Ideas into reality with <br />
-          Cutting-Edge Technologies
+        <h1 className="text-center font-body text-[28px] md:text-[64px] font-[700] drop-shadow-[5px_5px_10px_0px_rgba(0,0,0,0.15)] leading-[-1.28px] text-[#fff] mt-[150px]">
+          We Build Elite Websites and Apps
         </h1>
       </Animate>
+      {/* <Animate>
+        <h1 className="text-center font-body text-[28px] md:text-[64px] font-[700] drop-shadow-[5px_5px_10px_0px_rgba(0,0,0,0.15)] leading-[-1.28px] text-[#fff] mt-[150px]">
+          We Build Elite Websites and Apps
+        </h1>
+      </Animate> */}
       <Animate>
         <p className="font-body text-[20px] font-[400] text-center text-[#fff] md:px-[100px]">
           Elite Apps is a pioneering app development company, renowned for its

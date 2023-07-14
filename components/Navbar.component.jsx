@@ -1,4 +1,5 @@
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
+import Link from "next/link";
 import NextLink from "next/link";
 import { Animate, Zoom } from "./Animate.component";
 import { Drawer, useDrawer } from "./Drawer.component";
@@ -61,7 +62,9 @@ const MobileNav = () => {
       {/* Logo */}
 
       <Zoom>
-        <img src="/logo.png" alt="logo" className="w-[220px]" />
+        <Link href="/" className="cursor-pointer">
+          <img src="/logo.png" alt="logo" className="w-[220px]" />
+        </Link>
       </Zoom>
       {/* Icons */}
 
@@ -96,7 +99,9 @@ export const DesktopNav = () => {
       <div className="mt-[5px] flex justify-between items-center">
         {/* Logo */}
         <Zoom>
-          <img src="/logo.png" alt="logo" className="w-[220px]" />
+          <Link href="/" className="cursor-pointer">
+            <img src="/logo.png" alt="logo" className="w-[220px]" />
+          </Link>
         </Zoom>
         {/* Btn */}
         <Animate>
@@ -130,7 +135,7 @@ const Links = ({ isMobile = false, onClick = () => {} }) => {
                 {link?.link}
               </NextLink>
             ) : (
-              <Link
+              <ScrollLink
                 key={link?.link}
                 to={link.to}
                 activeClass="active"
@@ -141,7 +146,7 @@ const Links = ({ isMobile = false, onClick = () => {} }) => {
                 duration={500}
               >
                 {link?.link}
-              </Link>
+              </ScrollLink>
             )}
           </>
         );

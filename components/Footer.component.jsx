@@ -48,10 +48,22 @@ export const Footer = () => {
               Home
             </Link>
             <Link
-              href="/"
+              href="/inquire"
               className="text-[rgba(210,211,213,0.50)] text-[15px] font-[400]"
             >
               Contact Us
+            </Link>
+            <Link
+              href="/terms"
+              className="text-[rgba(210,211,213,0.50)] text-[15px] font-[400]"
+            >
+              Terms and Conditions
+            </Link>
+            <Link
+              href="/privacy"
+              className="text-[rgba(210,211,213,0.50)] text-[15px] font-[400]"
+            >
+              Privacy
             </Link>
           </div>
         </div>
