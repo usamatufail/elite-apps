@@ -51,7 +51,7 @@ export const Footer = () => {
             <img src="/svg/insta.icon.svg" alt="Instagram" />
           </div>
         </div>
-        <div className="flex flex-col gap-[20px]">
+        <div className="flex flex-col items-center md:items-start gap-[20px]">
           <Animate>
             <h2 className="text-[#fff] font-body text-[22px]">Useful Links</h2>
           </Animate>
