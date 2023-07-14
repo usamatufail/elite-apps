@@ -58,18 +58,18 @@ const data = [
     icon: "/svg/tour.icon.svg",
     text: "Tourism & HoReCa",
   },
-  {
-    icon: "/svg/oil.icon.svg",
-    text: "Oil & Gas",
-  },
+  // {
+  //   icon: "/svg/oil.icon.svg",
+  //   text: "Oil & Gas",
+  // },
 ];
 
 export const Industries = () => {
   return (
-    <section className="min-h-[500px] bg-[#E3E7EF] py-[50px] px-[100px] flex flex-col gap-[40px] justify-center items-center">
+    <section className="min-h-[500px] bg-[#E3E7EF] py-[50px] px-[20px] md:px-[100px] flex flex-col gap-[40px] justify-center items-center">
       <div className="flex flex-col gap-[12px] justify-center items-center">
         <Animate>
-          <h1 className="text-[#031221] font-body text-[40px] font-[700] capitalize text-center">
+          <h1 className="text-[#031221] font-body text-[30px] md:text-[40px] font-[700] capitalize text-center">
             Industries We Serve
           </h1>
         </Animate>
@@ -77,7 +77,7 @@ export const Industries = () => {
           <img src="/line.png" alt="" />
         </Zoom>
       </div>
-      <div className="grid grid-cols-5 gap-[20px]">
+      <div className="grid grid-cols-2 gap-[10px] md:grid-cols-5 md:gap-[20px]">
         {data.map((el, idx) => {
           return (
             <div key={idx}>
@@ -94,7 +94,7 @@ export const Industries = () => {
 
 const Card = ({ icon, text }) => {
   return (
-    <div className="flex flex-col gap-[8px] w-[230px] h-[150px] p-[10px] justify-center items-center rounded-[10px] bg-[#fff] shadow-sm">
+    <div className="flex flex-col gap-[8px] md:w-[230px] h-[150px] px-[20px] p-[10px] justify-center items-center rounded-[10px] bg-[#fff] shadow-sm">
       <img src={icon} alt={text} className="" />
       <p className="text-[#000] text-center font-body text-[16px] font-[500] capitalize">
         {text}

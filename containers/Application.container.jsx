@@ -20,8 +20,8 @@ const data = [
 
 export const Application = () => {
   return (
-    <section className="bg-[#fff] px-[100px] py-[50px] min-h-[300px]">
-      <div className="grid grid-cols-3 gap-[22px]">
+    <section className="bg-[#fff] px-[20px] md:px-[100px] py-[50px] min-h-[300px]">
+      <div className="grid md:grid-cols-3 gap-[22px]">
         {data.map((el) => {
           return (
             <div key={el.heading} className="">
@@ -44,7 +44,7 @@ const Card = ({ img, heading, text }) => {
         <h1 className="text-[#020202] font-body text-[22px] font-[500] uppercase">
           {heading}
         </h1>
-        <p className="text-[#545454] font-body text-[16px] font-[400] h-[100px]">
+        <p className="text-[#545454] font-body text-[16px] font-[400] min-h-[100px]">
           {text}
         </p>
       </div>

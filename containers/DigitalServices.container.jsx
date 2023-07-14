@@ -21,8 +21,8 @@ const data = [
 
 export const DigitalServices = () => {
   return (
-    <section className="bg-[#fff] min-h-[600px] py-[50px]">
-      <div className="grid grid-cols-2 justify-center items-center gap-[50px] px-[120px]">
+    <section className="bg-[#fff] md:min-h-[600px] py-[30px] md:py-[50px]">
+      <div className="grid md:grid-cols-2 justify-center items-center gap-[50px] px-[20px] md:px-[120px]">
         <div className="flex flex-col gap-[20px] font-body">
           <Animate>
             <h1 className="text-[#031221] text-[40px] font-[500] capitalize font-body">

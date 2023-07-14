@@ -2,7 +2,7 @@ import { Animate, Button, Zoom } from "~/components";
 
 export const Message = () => {
   return (
-    <section className=" bg-[url('/message-bg.png')] bg-cover bg-no-repeat py-[80px] ">
+    <section className=" bg-[url('/message-bg.png')] bg-cover bg-no-repeat py-[80px] px-[20px]">
       <div className="flex justify-between items-center gap-[80px] max-w-[1200px] m-auto">
         <div className="flex flex-col gap-[30px] justify-center">
           <Animate>
@@ -21,7 +21,11 @@ export const Message = () => {
           </Zoom>
         </div>
         <Zoom>
-          <img src="/mobile.png" alt="mobile" className="w-[450px]" />
+          <img
+            src="/mobile.png"
+            alt="mobile"
+            className="hidden md:block md:w-[450px]"
+          />
         </Zoom>
       </div>
     </section>

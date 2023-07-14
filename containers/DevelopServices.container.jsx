@@ -17,12 +17,12 @@ const data = [
 
 export const DevelopServices = () => {
   return (
-    <section className="bg-[#fff] min-h-[600px] py-[50px]">
-      <div className="grid grid-cols-2 justify-center items-center gap-[50px] px-[120px]">
+    <section className="bg-[#fff] min-h-[600px] py-[50px] px-[20px]">
+      <div className="grid md:grid-cols-2 justify-center items-center gap-[50px] md:px-[120px]">
         <Zoom>
           <img src="/develop.png" alt="Development Services" />
         </Zoom>
-        <div className="flex flex-col gap-[20px] font-body pr-[100px]">
+        <div className="flex flex-col gap-[20px] font-body md:pr-[100px]">
           <Animate>
             <h1 className="text-[#031221] text-[40px] font-[500] capitalize font-body">
               Development Services

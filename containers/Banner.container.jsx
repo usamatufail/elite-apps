@@ -21,7 +21,7 @@ const data = [
 
 export const Banner = () => {
   return (
-    <section className="min-h-[950px] bg-[url('/banner-bg.png')] bg-cover bg-no-repeat relative z-0 -mt-[100px] flex flex-col gap-[50px] justify-center items-center pb-[40px]">
+    <section className="min-h-[950px] bg-[url('/banner-bg.png')] bg-cover bg-no-repeat relative z-0 -mt-[100px] flex flex-col gap-[50px] justify-center items-center pb-[40px] px-[20px]">
       <Animate>
         <p className="font-body text-[20px] font-[400] uppercase text-center text-[#fff] mt-[150px]">
           WELCOME TO <strong>ELITE APPS</strong>
@@ -30,7 +30,7 @@ export const Banner = () => {
         </p>
       </Animate>
       <Animate>
-        <h1 className="text-center font-body text-[64px] font-[700] drop-shadow-[5px_5px_10px_0px_rgba(0,0,0,0.15)] leading-[-1.28px] text-[#fff]">
+        <h1 className="text-center font-body text-[28px] md:text-[64px] font-[700] drop-shadow-[5px_5px_10px_0px_rgba(0,0,0,0.15)] leading-[-1.28px] text-[#fff]">
           We Transform Your Ideas into reality with <br />
           Cutting-Edge Technologies
         </h1>
@@ -49,7 +49,7 @@ export const Banner = () => {
       </Zoom>
       <div className="bg-[#fff] md:px-[150px] px-[40px] py-[30px] rounded-[20px] border-solid border border-[rgba(255,255,255,0.15)] shadow-[0px_20px_30px_0px_rgba(0,0,0,0.20)]">
         <Zoom>
-          <div className="flex justify-center items-center gap-[40px]">
+          <div className="flex flex-col justify-center items-center gap-[40px]">
             {data.map((el) => {
               return (
                 <div
