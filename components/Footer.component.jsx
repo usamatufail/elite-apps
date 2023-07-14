@@ -48,7 +48,9 @@ export const Footer = () => {
             <img src="/svg/fb.icon.svg" alt="facebook" />
             <img src="/svg/twiter.icon.svg" alt="Twiter" />
             <img src="/svg/in.icon.svg" alt="LinedIn" />
-            <img src="/svg/insta.icon.svg" alt="Instagram" />
+            <a href="https://www.instagram.com/eliteapplications/?igshid=NTc4MTIwNjQ2YQ%3D%3D">
+              <img src="/svg/insta.icon.svg" alt="Instagram" />
+            </a>
           </div>
         </div>
         <div className="flex flex-col items-center md:items-start gap-[20px]">
