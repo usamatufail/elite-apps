@@ -6,3 +6,4 @@ export { OurProcess } from "./OurProcess.container";
 export { Technologies } from "./Technologies.container";
 export { Clients } from "./Clients.container";
 export { Industries } from "./Industories.container";
+export { Journey } from "./Journey.container";
