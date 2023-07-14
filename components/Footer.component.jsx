@@ -20,7 +20,7 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="grid md:grid-cols-3 gap-[20px] md:gap-[120px] max-w-[1200px] m-auto mt-[50px]">
+      <div className="grid md:grid-cols-3 gap-[20px] md:gap-[150px] max-w-[1200px] m-auto mt-[50px]">
         <div className="flex flex-col items-center md:items-start gap-[20px]">
           <div className="flex items-center md:items-start  flex-col gap-[12px]">
             <h2 className="text-[#fff] font-body text-[22px]">About</h2>
@@ -38,7 +38,7 @@ export const Footer = () => {
             <img src="/svg/insta.icon.svg" alt="Instagram" />
           </div>
         </div>
-        <div className="flex flex-col items-center  gap-[20px]">
+        <div className="flex flex-col items-center gap-[20px]">
           <h2 className="text-[#fff] font-body text-[22px]">Useful Links</h2>
           <div className="flex flex-col items-center md:items-start  gap-[4px]">
             <Link

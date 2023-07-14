@@ -72,7 +72,7 @@ const MobileNav = () => {
 
 export const DesktopNav = () => {
   return (
-    <nav className="hidden md:block h-[100px] sticky top-0 z-10 px-[1rem] w-full md:px-[55px] py-[12px]">
+    <nav className="hidden md:block h-[80px] sticky top-0 z-10 px-[1rem] w-full md:px-[55px] py-[12px]">
       <div className="flex justify-between items-center w-full">
         <div className="flex gap-[5px]">
           <img src="/svg/map.icon.svg" alt="map" />
@@ -106,7 +106,7 @@ export const DesktopNav = () => {
 };
 
 const Links = ({ isMobile = false, onClick = () => {} }) => {
-  const linkClass = ` text-[1.6rem] md:p-[1rem] md:pb-[20px] text-white font-[500] cursor-pointer font-body transition-bg duration-500 flex items-center border-b-[4px] border-b-[transparent] `;
+  const linkClass = ` text-[1.6rem] md:p-[1rem] md:pb-[12px] text-white font-[500] cursor-pointer font-body transition-bg duration-500 flex items-center border-b-[4px] border-b-[transparent] `;
   const hoverClass = ` hover:border-b-[#fff] hover:border-b-solid`;
   return (
     <div

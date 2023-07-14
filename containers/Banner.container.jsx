@@ -21,7 +21,7 @@ const data = [
 
 export const Banner = () => {
   return (
-    <section className="min-h-[950px] bg-[url('/banner-bg.png')] bg-cover bg-no-repeat relative z-0 -mt-[100px] flex flex-col gap-[20px] justify-center items-center pb-[40px] px-[20px]">
+    <section className="min-h-[100vh] bg-[url('/banner-bg.png')] bg-cover bg-no-repeat relative z-0 -mt-[100px] flex flex-col gap-[20px] justify-center items-center pb-[40px] px-[20px]">
       <Animate>
         <p className="font-body text-[20px] font-[400] uppercase text-center text-[#fff] mt-[150px]">
           WELCOME TO <strong>ELITE APPS</strong>
@@ -47,7 +47,7 @@ export const Banner = () => {
       <Zoom>
         <Button />
       </Zoom>
-      <div className="bg-[#fff] md:px-[150px] px-[40px] py-[30px] rounded-[20px] border-solid border border-[rgba(255,255,255,0.15)] shadow-[0px_20px_30px_0px_rgba(0,0,0,0.20)]">
+      <div className="bg-[#fff] md:px-[150px] px-[40px] py-[30px] rounded-[20px] border-solid border border-[rgba(255,255,255,0.15)] shadow-[0px_20px_30px_0px_rgba(0,0,0,0.20)] mt-[20px]">
         <Zoom>
           <div className="flex flex-col md:flex-row justify-center items-center gap-[40px]">
             {data.map((el) => {
