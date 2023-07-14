@@ -1,4 +1,4 @@
-import { Animate, Zoom } from "~/components";
+import { Animate, Button, Zoom } from "~/components";
 
 const data = [
   {
@@ -22,7 +22,7 @@ const data = [
 export const DigitalServices = () => {
   return (
     <section className="bg-[#fff] md:min-h-[600px] py-[30px] md:py-[50px]">
-      <div className="grid md:grid-cols-2 justify-center items-center gap-[50px] px-[20px] md:px-[120px]">
+      <div className="grid md:grid-cols-2 justify-center items-center gap-[50px] px-[20px] md:px-[30px] xl:px-[120px]">
         <div className="flex flex-col gap-[20px] font-body">
           <Animate>
             <h1 className="text-[#031221] text-[40px] font-[500] capitalize font-body">
@@ -58,7 +58,16 @@ export const DigitalServices = () => {
           </Animate>
         </div>
         <Zoom>
-          <img src="/digital.png" alt="Digital Services" />
+          <img
+            src="/digital.png"
+            alt="Digital Services"
+            className="w-[700px]"
+          />
+        </Zoom>
+      </div>
+      <div className="flex justify-center mt-[20px] md:mt-[40px]">
+        <Zoom>
+          <Button navy />
         </Zoom>
       </div>
     </section>

@@ -1,5 +1,5 @@
 import { Element } from "react-scroll";
-import { Animate, Zoom } from "~/components";
+import { Animate, Button, Zoom } from "~/components";
 
 export const OurProcess = () => {
   return (
@@ -21,6 +21,11 @@ export const OurProcess = () => {
         <Zoom>
           <img src="/info.png" alt="Project timline ingo" />
         </Zoom>
+        <div className="flex justify-center mt-[20px]">
+          <Zoom>
+            <Button />
+          </Zoom>
+        </div>
       </section>
     </Element>
   );

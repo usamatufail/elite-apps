@@ -69,7 +69,7 @@ export const Industries = () => {
   return (
     <Element>
       <section
-        className="min-h-[500px] bg-[#E3E7EF] py-[50px] px-[12px] md:px-[100px] flex flex-col gap-[40px] justify-center items-center"
+        className="min-h-[500px] bg-[#E3E7EF] py-[50px] px-[12px] md:px-[60px] 2xl:px-[120px] flex flex-col gap-[40px] justify-center items-center"
         id="industories"
       >
         <div className="flex flex-col gap-[12px] justify-center items-center">
@@ -82,7 +82,7 @@ export const Industries = () => {
             <img src="/line.png" alt="" />
           </Zoom>
         </div>
-        <div className="grid grid-cols-3 gap-[8px] md:grid-cols-5 md:gap-[20px]">
+        <div className="grid grid-cols-3 gap-[8px] xl:grid-cols-5 md:gap-[20px]">
           {data.map((el, idx) => {
             return (
               <div key={idx}>

@@ -28,7 +28,7 @@ export const Technologies = () => {
             <img src="/line.png" alt="" />
           </Zoom>
         </div>
-        <div className="md:px-[80px] overflow-hidden">
+        <div className="md:px-[80px] overflow-hidden max-w-[1300px] m-auto">
           <Marquee pauseOnHover gradient={false} speed={40}>
             <div className="flex gap-[10px] pl-[10px]">
               <img

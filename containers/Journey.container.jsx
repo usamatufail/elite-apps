@@ -1,5 +1,5 @@
 import { Element } from "react-scroll";
-import { Animate, Zoom } from "~/components";
+import { Animate, Button, Zoom } from "~/components";
 
 const data = [
   {
@@ -28,7 +28,7 @@ export const Journey = () => {
   return (
     <Element>
       <section
-        className="md:min-h-[400px] bg-[#031221] py-[40px] px-[20px] md:px-[100px] flex flex-col gap-[40px] md:gap-[60px] justify-center items-center"
+        className="md:min-h-[400px] bg-[#031221] py-[40px] px-[20px] md:px-[80px] 2xl:px-[100px] flex flex-col gap-[40px] md:gap-[60px] justify-center items-center"
         id="journey"
       >
         <div className="flex flex-col gap-[12px] justify-center items-center">
@@ -52,6 +52,9 @@ export const Journey = () => {
             );
           })}
         </div>
+        <Zoom>
+          <Button navy />
+        </Zoom>
       </section>
     </Element>
   );
@@ -59,15 +62,21 @@ export const Journey = () => {
 
 const Card = ({ img, heading, text }) => {
   return (
-    <div className="flex gap-[10px] md:gap-[2px] md:min-w-[250px] md:h-[80px]">
-      <img src={img} alt={text} className="w-[70px] h-[60px] md:w-[unset]" />
+    <div className="flex gap-[10px] md:gap-[2px] xl:min-w-[250px] xl:h-[80px]">
+      <Zoom>
+        <img src={img} alt={text} className="w-[70px] h-[60px] md:w-[unset]" />
+      </Zoom>
       <div className="flex flex-col gap-[2px] md:gap-[4px]">
-        <h1 className="text-[#fff] font-body text-[24px] md:text-[30px] font-[500]">
-          {heading}
-        </h1>
-        <p className="text-[#fff] font-body text-[14px] md:text-[16px] font-[400]">
-          {text}
-        </p>
+        <Animate>
+          <h1 className="text-[#fff] font-body text-[24px] md:text-[30px] font-[500]">
+            {heading}
+          </h1>
+        </Animate>
+        <Animate>
+          <p className="text-[#fff] font-body text-[14px] md:text-[16px] font-[400]">
+            {text}
+          </p>
+        </Animate>
       </div>
     </div>
   );

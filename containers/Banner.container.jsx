@@ -4,7 +4,7 @@ import Marquee from "react-fast-marquee";
 const data = [
   {
     img: "/svg/web.icon.svg",
-    text: "Creatively Crafted Websites",
+    text: "Custom Coded Websites",
   },
   {
     img: "/svg/app.icon.svg",
@@ -22,7 +22,7 @@ const data = [
 
 export const Banner = () => {
   return (
-    <section className="md:min-h-[100vh] bg-[url('/banner-bg.png')] bg-cover bg-no-repeat relative z-0 -mt-[100px] flex flex-col gap-[30px] justify-center items-center pb-[40px] px-[20px]">
+    <section className=" bg-[url('/banner-bg.png')] bg-cover bg-no-repeat relative z-0 -mt-[100px] flex flex-col gap-[30px] justify-center items-center pb-[40px] px-[20px]">
       {/* <Animate>
         <p className="font-body text-[20px] font-[400] uppercase text-center text-[#fff] mt-[150px]">
           WELCOME TO <strong>ELITE APPS</strong>
@@ -47,14 +47,14 @@ export const Banner = () => {
           className="max-w-[300px] md:max-w-[400px]"
         />
       </Animate>
-      <div className="md:px-[60px] overflow-hidden">
+      <div className="md:px-[60px] overflow-hidden max-w-[1050px] m-auto">
         <Marquee pauseOnHover gradient={false} speed={40}>
           <div className="flex gap-[10px] pl-[10px]">
-            <img src="/1.png" alt="" className="w-[100px] md:w-[400px]" />
-            <img src="/2.png" alt="" className="w-[100px] md:w-[400px]" />
-            <img src="/3.png" alt="" className="w-[100px] md:w-[400px]" />
-            <img src="/4.png" alt="" className="w-[100px] md:w-[400px]" />
-            <img src="/5.png" alt="" className="w-[100px] md:w-[400px]" />
+            <img src="/1.png" alt="" className="w-[100px] md:w-[210px]" />
+            <img src="/2.png" alt="" className="w-[100px] md:w-[210px]" />
+            <img src="/3.png" alt="" className="w-[100px] md:w-[210px]" />
+            <img src="/4.png" alt="" className="w-[100px] md:w-[210px]" />
+            <img src="/5.png" alt="" className="w-[100px] md:w-[210px]" />
           </div>
         </Marquee>
       </div>

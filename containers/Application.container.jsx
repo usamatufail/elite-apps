@@ -1,6 +1,7 @@
 import { Zoom } from "~/components";
 import { Modal } from "antd";
 import { useState } from "react";
+import { Button as CustomButton } from "~/components";
 
 const data = [
   {
@@ -19,8 +20,8 @@ const data = [
   },
   {
     img: "/svg/blockchain.icon.svg",
-    heading: "Blockchain",
-    text: "We have a team of expert blockchain developers who have years of experience in building applications for a wide range of blockchain platforms.",
+    heading: "Blockchain Development",
+    text: "We have a team of expert blockchain developers who have years of experience in building applications for a wide range of blockchain platforms With a proven track record.",
     modalText:
       "Elite Apps takes pride in its team of expert blockchain developers who possess extensive experience in building applications across various blockchain platforms. With their deep understanding of blockchain technology, our developers can create robust and secure applications that leverage the potential of decentralized systems. Whether you require a blockchain-based solution for finance, supply chain, or any other industry, our team can deliver tailored applications that meet your specific requirements. We stay up-to-date with the latest advancements in blockchain to ensure that our solutions are at the forefront of innovation. Trust Elite Apps to provide you with cutting-edge blockchain applications that drive efficiency and transparency in your business processes.",
   },
@@ -45,6 +46,11 @@ export const Application = () => {
           );
         })}
       </div>
+      {/* <div className="flex justify-center mt-[20px] md:mt-[40px]">
+        <Zoom>
+          <CustomButton navy />
+        </Zoom>
+      </div> */}
     </section>
   );
 };
@@ -62,7 +68,7 @@ const Card = ({ img, heading, text, modalText }) => {
         <h1 className="text-[#1AC2FA] font-body text-[22px] font-[500] uppercase">
           {heading}
         </h1>
-        <p className="text-[#545454] font-body text-[16px] font-[400] h-[150px] md:h-[90px]">
+        <p className="text-[#545454] font-body text-[16px] font-[400] h-[150px] md:h-[230px]  2xl:h-[100px]">
           {text}
         </p>
         <CustomModal

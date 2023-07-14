@@ -1,4 +1,4 @@
-import { Animate, Zoom } from "~/components";
+import { Animate, Button, Zoom } from "~/components";
 import { Element } from "react-scroll";
 
 const data = [
@@ -23,7 +23,7 @@ export const DevelopServices = () => {
         className="bg-[#fff] min-h-[600px] py-[50px] px-[20px]"
         id="services"
       >
-        <div className="grid md:grid-cols-2 justify-center items-center gap-[50px] md:px-[120px]">
+        <div className="grid md:grid-cols-2 justify-center items-center gap-[50px] md:px-[30px] xl:px-[120px]">
           <Zoom>
             <img src="/develop.png" alt="Development Services" />
           </Zoom>
@@ -63,6 +63,11 @@ export const DevelopServices = () => {
               </div>
             </Animate>
           </div>
+        </div>
+        <div className="flex justify-center mt-[20px] md:mt-[40px]">
+          <Zoom>
+            <Button />
+          </Zoom>
         </div>
       </section>
     </Element>
