@@ -59,10 +59,10 @@ const Card = ({ img, heading, text, modalText }) => {
     <section className="bg-[#fff] p-[30px] border border-[#1D78F2] border-solid rounded-[20px] shadow-[0px_15px_20px_0px_rgba(0,0,0,0.04)]">
       <div className="flex flex-col gap-[15px]">
         <img src={img} alt={heading} className="w-[52px] h-[50px]" />
-        <h1 className="text-[#020202] font-body text-[22px] font-[500] uppercase">
+        <h1 className="text-[#1AC2FA] font-body text-[22px] font-[500] uppercase">
           {heading}
         </h1>
-        <p className="text-[#545454] font-body text-[16px] font-[400] min-h-[100px]">
+        <p className="text-[#545454] font-body text-[16px] font-[400] h-[150px] md:h-[90px]">
           {text}
         </p>
         <CustomModal

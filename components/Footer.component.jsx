@@ -3,7 +3,7 @@ import { Animate, Zoom } from "./Animate.component";
 
 export const Footer = () => {
   return (
-    <section className="bg-[#031221] py-[20px] px-[20px]">
+    <section className="bg-[#031221] py-[10px] px-[20px]">
       <div className=" flex flex-col md:flex-row justify-between items-center gap-[10px] max-w-[1200px] m-auto py-[20px]">
         <Zoom>
           <Link href="/" className="cursor-pointer">
@@ -29,7 +29,7 @@ export const Footer = () => {
           </Animate>
         </div>
       </div>
-      <div className="grid md:grid-cols-3 gap-[20px] md:gap-[150px] max-w-[1200px] m-auto mt-[50px]">
+      <div className="grid md:grid-cols-3 gap-[20px] md:gap-[150px] max-w-[1200px] m-auto mt-[20px]">
         <div className="flex flex-col items-center md:items-start gap-[20px]">
           <div className="flex items-center md:items-start  flex-col gap-[12px]">
             <Animate>
@@ -102,7 +102,7 @@ export const Footer = () => {
         </div>
       </div>
       <Animate>
-        <p className="text-[#D2D3D5] text-center text-[14px] font-[400] mt-[50px]">
+        <p className="text-[#D2D3D5] text-center text-[14px] font-[400] mt-[20px]">
           © 2023 — Elite Apps . All Rights Reserved.
         </p>
       </Animate>

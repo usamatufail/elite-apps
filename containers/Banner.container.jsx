@@ -1,4 +1,5 @@
 import { Animate, Button, Zoom } from "~/components";
+import Marquee from "react-fast-marquee";
 
 const data = [
   {
@@ -21,7 +22,7 @@ const data = [
 
 export const Banner = () => {
   return (
-    <section className="md:min-h-[100vh] bg-[url('/banner-bg.png')] bg-cover bg-no-repeat relative z-0 -mt-[100px] flex flex-col gap-[20px] justify-center items-center pb-[40px] px-[20px]">
+    <section className="md:min-h-[100vh] bg-[url('/banner-bg.png')] bg-cover bg-no-repeat relative z-0 -mt-[100px] flex flex-col gap-[30px] justify-center items-center pb-[40px] px-[20px]">
       {/* <Animate>
         <p className="font-body text-[20px] font-[400] uppercase text-center text-[#fff] mt-[150px]">
           WELCOME TO <strong>ELITE APPS</strong>
@@ -30,7 +31,7 @@ export const Banner = () => {
         </p>
       </Animate> */}
       <Animate>
-        <h1 className="text-center font-body text-[28px] md:text-[64px] font-[700] drop-shadow-[5px_5px_10px_0px_rgba(0,0,0,0.15)] leading-[-1.28px] text-[#fff] mt-[150px]">
+        <h1 className="text-center font-body text-[28px] md:text-[64px] font-[700] drop-shadow-[5px_5px_10px_0px_rgba(0,0,0,0.15)] leading-[-1.28px] text-[#fff] mt-[150px] px-[10px]">
           We Build Elite Websites and Apps
         </h1>
       </Animate>
@@ -40,14 +41,23 @@ export const Banner = () => {
         </h1>
       </Animate> */}
       <Animate>
-        <p className="font-body text-[20px] font-[400] text-center text-[#fff] md:px-[100px]">
-          Elite Apps is a pioneering app development company, renowned for its
-          innovative and transformative digital solutions. Founded on the
-          principle that every idea holds the potential to reshape the digital
-          landscape, Elite Apps has steadfastly pushed the boundaries of
-          creativity and technological advancement.
-        </p>
+        <img
+          src="/trust.png"
+          alt="trust"
+          className="max-w-[300px] md:max-w-[400px]"
+        />
       </Animate>
+      <div className="md:px-[60px] overflow-hidden">
+        <Marquee pauseOnHover gradient={false} speed={40}>
+          <div className="flex gap-[10px] pl-[10px]">
+            <img src="/1.png" alt="" className="w-[100px] md:w-[400px]" />
+            <img src="/2.png" alt="" className="w-[100px] md:w-[400px]" />
+            <img src="/3.png" alt="" className="w-[100px] md:w-[400px]" />
+            <img src="/4.png" alt="" className="w-[100px] md:w-[400px]" />
+            <img src="/5.png" alt="" className="w-[100px] md:w-[400px]" />
+          </div>
+        </Marquee>
+      </div>
       <Zoom>
         <Button />
       </Zoom>

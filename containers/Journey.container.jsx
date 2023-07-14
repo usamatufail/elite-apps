@@ -14,12 +14,12 @@ const data = [
   },
   {
     img: "/complete.png",
-    heading: "200+",
+    heading: "1,650+",
     text: "Delivered Projects",
   },
   {
     img: "/experience.png",
-    heading: "10+",
+    heading: "22+",
     text: "Years of Experience",
   },
 ];
@@ -28,12 +28,12 @@ export const Journey = () => {
   return (
     <Element>
       <section
-        className="min-h-[400px] bg-[#031221] py-[20px] px-[20px] md:px-[100px] flex flex-col gap-[60px] justify-center items-center"
+        className="md:min-h-[400px] bg-[#031221] py-[40px] px-[20px] md:px-[100px] flex flex-col gap-[40px] md:gap-[60px] justify-center items-center"
         id="journey"
       >
         <div className="flex flex-col gap-[12px] justify-center items-center">
           <Animate>
-            <h1 className="text-[#fff] font-body text-[26px] md:text-[40px] font-[500] md:font-[700] capitalize text-center">
+            <h1 className="text-[#fff] font-body text-[20px] md:text-[40px] font-[500] md:font-[700] capitalize text-center">
               WE&apos;RE PROUD OF OUR JOURNEY
             </h1>
           </Animate>
@@ -41,7 +41,7 @@ export const Journey = () => {
             <img src="/line.png" alt="" />
           </Zoom>
         </div>
-        <div className="grid gap-[30px] md:flex md:gap-[50px] pb-[20px]">
+        <div className="grid grid-cols-2 gap-[10px] md:flex md:gap-[50px] pb-[20px]">
           {data.map((el, idx) => {
             return (
               <div key={idx}>
@@ -60,12 +60,14 @@ export const Journey = () => {
 const Card = ({ img, heading, text }) => {
   return (
     <div className="flex gap-[10px] md:gap-[2px] md:min-w-[250px] md:h-[80px]">
-      <img src={img} alt={text} className="w-[100px] md:w-[unset]" />
-      <div className="flex flex-col gap-[5px]">
-        <h1 className="text-[#fff] font-body text-[30px] font-[500]">
+      <img src={img} alt={text} className="w-[70px] h-[60px] md:w-[unset]" />
+      <div className="flex flex-col gap-[2px] md:gap-[4px]">
+        <h1 className="text-[#fff] font-body text-[24px] md:text-[30px] font-[500]">
           {heading}
         </h1>
-        <p className="text-[#fff] font-body text-[16px] font-[400]">{text}</p>
+        <p className="text-[#fff] font-body text-[14px] md:text-[16px] font-[400]">
+          {text}
+        </p>
       </div>
     </div>
   );

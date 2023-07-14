@@ -69,7 +69,7 @@ export const Industries = () => {
   return (
     <Element>
       <section
-        className="min-h-[500px] bg-[#E3E7EF] py-[50px] px-[20px] md:px-[100px] flex flex-col gap-[40px] justify-center items-center"
+        className="min-h-[500px] bg-[#E3E7EF] py-[50px] px-[12px] md:px-[100px] flex flex-col gap-[40px] justify-center items-center"
         id="industories"
       >
         <div className="flex flex-col gap-[12px] justify-center items-center">
@@ -82,7 +82,7 @@ export const Industries = () => {
             <img src="/line.png" alt="" />
           </Zoom>
         </div>
-        <div className="grid grid-cols-2 gap-[10px] md:grid-cols-5 md:gap-[20px]">
+        <div className="grid grid-cols-3 gap-[8px] md:grid-cols-5 md:gap-[20px]">
           {data.map((el, idx) => {
             return (
               <div key={idx}>
@@ -100,9 +100,9 @@ export const Industries = () => {
 
 const Card = ({ icon, text }) => {
   return (
-    <div className="flex flex-col gap-[8px] md:w-[230px] h-[150px] px-[20px] p-[10px] justify-center items-center rounded-[10px] bg-[#fff] shadow-sm">
-      <img src={icon} alt={text} className="" />
-      <p className="text-[#000] text-center font-body text-[16px] font-[500] capitalize">
+    <div className="flex flex-col gap-[8px] md:w-[230px] h-[120px] px-[20px] p-[10px] justify-center items-center rounded-[10px] bg-[#fff] shadow-sm">
+      <img src={icon} alt={text} className="w-[40px]" />
+      <p className="text-[#000] text-center font-body text-[12px] md:text-[16px] md:font-[500] capitalize h-[50px] md:h-[unset]">
         {text}
       </p>
     </div>
