@@ -23,10 +23,10 @@ html {
 
 
 .form-container {
-  max-height: 100vh;
+  max-height: 85vh;
   overflow: hidden;
 }
 
 .form-container iframe {
-  height: calc(100vh) !important;
+  height: calc(85vh) !important;
 }
