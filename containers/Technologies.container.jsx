@@ -1,3 +1,4 @@
+import { Element } from "react-scroll";
 import { Animate, Zoom } from "~/components";
 
 const data = [
@@ -11,29 +12,34 @@ const data = [
 
 export const Technologies = () => {
   return (
-    <section className="min-h-[400px] bg-[url('/tech-bg.png')] bg-cover bg-no-repeat py-[20px] px-[20px] md:px-[100px] flex flex-col gap-[30px] justify-center items-center">
-      <div className="flex flex-col gap-[12px] justify-center items-center">
-        <Animate>
-          <h1 className="text-[#fff] font-body text-[30px] md:text-[40px] font-[700] capitalize text-center">
-            Technologies
-          </h1>
-        </Animate>
-        <Zoom>
-          <img src="/line.png" alt="" />
-        </Zoom>
-      </div>
-      <div className="grid grid-cols-2 md:flex gap-[10px] md:gap-[20px]">
-        {data.map((el, idx) => {
-          return (
-            <div key={idx}>
-              <Zoom>
-                <Card icon={el} />
-              </Zoom>
-            </div>
-          );
-        })}
-      </div>
-    </section>
+    <Element className="element">
+      <section
+        className="min-h-[400px] bg-[url('/tech-bg.png')] bg-cover bg-no-repeat py-[20px] px-[20px] md:px-[100px] flex flex-col gap-[30px] justify-center items-center"
+        id="technologies"
+      >
+        <div className="flex flex-col gap-[12px] justify-center items-center">
+          <Animate>
+            <h1 className="text-[#fff] font-body text-[30px] md:text-[40px] font-[700] capitalize text-center">
+              Technologies
+            </h1>
+          </Animate>
+          <Zoom>
+            <img src="/line.png" alt="" />
+          </Zoom>
+        </div>
+        <div className="grid grid-cols-2 md:flex gap-[10px] md:gap-[20px]">
+          {data.map((el, idx) => {
+            return (
+              <div key={idx}>
+                <Zoom>
+                  <Card icon={el} />
+                </Zoom>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+    </Element>
   );
 };
 

@@ -1,4 +1,38 @@
+import { Link } from "react-scroll";
 import { Animate, Zoom } from "./Animate.component";
+import { Drawer, useDrawer } from "./Drawer.component";
+import { HiBars3BottomRight } from "react-icons/hi2";
+
+const linkData = [
+  {
+    link: "Home",
+    to: "home",
+  },
+  {
+    link: "Services",
+    to: "services",
+  },
+  {
+    link: "Technologies",
+    to: "technologies",
+  },
+  {
+    link: "Process",
+    to: "process",
+  },
+  {
+    link: "Clients",
+    to: "clients",
+  },
+  {
+    link: "Insdustories",
+    to: "industories",
+  },
+  {
+    link: "Journey",
+    to: "journey",
+  },
+];
 
 export const Navbar = () => {
   return (
@@ -10,8 +44,29 @@ export const Navbar = () => {
 };
 
 const MobileNav = () => {
+  const { isOpen, openDrawer, closeDrawer } = useDrawer();
   return (
-    <nav className="md:hidden bg-cover bg-no-repeat bg-center top-0 flex items-center justify-center px-[1rem] md:px-[10rem] z-30 py-[12px] overflow-hidden"></nav>
+    <nav className="md:hidden sticky top-0 flex items-center justify-between px-[1rem] z-30 overflow-hidden mt-[10px]">
+      {/* Drawer For Links */}
+      <Drawer
+        open={isOpen}
+        openFrom="right"
+        onClose={closeDrawer}
+        heading="Menu"
+      >
+        <Links isMobile onClick={closeDrawer} />
+      </Drawer>
+      {/* Logo */}
+
+      <Zoom>
+        <img src="/logo.png" alt="logo" className="w-[220px]" />
+      </Zoom>
+      {/* Icons */}
+
+      <button onClick={openDrawer}>
+        <HiBars3BottomRight size={35} color="white" />
+      </button>
+    </nav>
   );
 };
 
@@ -36,14 +91,47 @@ export const DesktopNav = () => {
           </Animate>
         </div>
       </div>
-      <div className="mt-[5px]">
+      <div className="mt-[5px] flex justify-between items-center">
         {/* Logo */}
         <Zoom>
           <img src="/logo.png" alt="logo" className="w-[220px]" />
         </Zoom>
         {/* Btn */}
-        <Animate></Animate>
+        <Animate>
+          <Links />
+        </Animate>
       </div>
     </nav>
+  );
+};
+
+const Links = ({ isMobile = false, onClick = () => {} }) => {
+  const linkClass = ` text-[1.6rem] md:p-[1rem] md:pb-[20px] text-white font-[500] cursor-pointer font-body transition-bg duration-500 flex items-center border-b-[4px] border-b-[transparent] `;
+  const hoverClass = ` hover:border-b-[#fff] hover:border-b-solid`;
+  return (
+    <div
+      className={`flex ${
+        isMobile
+          ? "flex-col text-[1.6rem] font-body font-medium navbar gap-[20px]"
+          : ""
+      } gap-[10px] items-center `}
+    >
+      {linkData.map((link) => {
+        return (
+          <Link
+            key={link?.link}
+            to={link.to}
+            activeClass="active"
+            className={`${linkClass} ${hoverClass}`}
+            onClick={onClick}
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            {link?.link}
+          </Link>
+        );
+      })}
+    </div>
   );
 };
