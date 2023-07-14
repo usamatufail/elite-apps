@@ -3,4 +3,5 @@ export { DevelopServices } from "./DevelopServices.container";
 export { DigitalServices } from "./DigitalServices.container";
 export { Application } from "./Application.container";
 export { OurProcess } from "./OurProcess.container";
-// export {};
+export { Technologies } from "./Technologies.container";
+export { Clients } from "./Clients.container";

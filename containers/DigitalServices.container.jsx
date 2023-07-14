@@ -1,3 +1,5 @@
+import { Animate, Zoom } from "~/components";
+
 const data = [
   {
     icon: "/svg/tick.icon.svg",
@@ -22,32 +24,42 @@ export const DigitalServices = () => {
     <section className="bg-[#fff] min-h-[600px] py-[50px]">
       <div className="grid grid-cols-2 justify-center items-center gap-[50px] px-[120px]">
         <div className="flex flex-col gap-[20px] font-body">
-          <h1 className="text-[#031221] text-[40px] font-[500] capitalize font-body">
-            Digital Services
-          </h1>
-          <p className="text-[#1d78f2] text-[18px] font-[500] font-body">
-            Transmitting Your Business Through Premium Digital Services
-          </p>
-          <p className="text-[#545454] font-[400] font-body text-[16px]">
-            Leveraging the latest technologies to deliver excellent web
-            development and marketing solutions to help you achieve your
-            business goals. We work with you to build, enhance, expand, and
-            maintain the digital avatar of your business.
-          </p>
-          <div className="flex flex-col gap-[15px]">
-            {data.map((el) => {
-              return (
-                <div className="flex gap-[10px] items-start" key={el.text}>
-                  <img className="pt-[3px]" src={el.icon} alt={el.text} />
-                  <p className="text-[#545454] font-[400] font-body text-[16px]">
-                    {el.text}
-                  </p>
-                </div>
-              );
-            })}
-          </div>
+          <Animate>
+            <h1 className="text-[#031221] text-[40px] font-[500] capitalize font-body">
+              Digital Services
+            </h1>
+          </Animate>
+          <Animate>
+            <p className="text-[#1d78f2] text-[18px] font-[500] font-body">
+              Transmitting Your Business Through Premium Digital Services
+            </p>
+          </Animate>
+          <Animate>
+            <p className="text-[#545454] font-[400] font-body text-[16px]">
+              Leveraging the latest technologies to deliver excellent web
+              development and marketing solutions to help you achieve your
+              business goals. We work with you to build, enhance, expand, and
+              maintain the digital avatar of your business.
+            </p>
+          </Animate>
+          <Animate>
+            <div className="flex flex-col gap-[15px]">
+              {data.map((el) => {
+                return (
+                  <div className="flex gap-[10px] items-start" key={el.text}>
+                    <img className="pt-[3px]" src={el.icon} alt={el.text} />
+                    <p className="text-[#545454] font-[400] font-body text-[16px]">
+                      {el.text}
+                    </p>
+                  </div>
+                );
+              })}
+            </div>
+          </Animate>
         </div>
-        <img src="/digital.png" alt="Digital Services" />
+        <Zoom>
+          <img src="/digital.png" alt="Digital Services" />
+        </Zoom>
       </div>
     </section>
   );

@@ -1,3 +1,5 @@
+import { Zoom } from "~/components";
+
 const data = [
   {
     img: "/svg/code.icon.svg",
@@ -23,7 +25,9 @@ export const Application = () => {
         {data.map((el) => {
           return (
             <div key={el.heading} className="">
-              <Card img={el.img} heading={el.heading} text={el.text} />
+              <Zoom>
+                <Card img={el.img} heading={el.heading} text={el.text} />
+              </Zoom>
             </div>
           );
         })}
