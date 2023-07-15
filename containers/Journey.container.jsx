@@ -30,7 +30,7 @@ export const Journey = () => {
   return (
     <Element>
       <section
-        className="md:min-h-[400px] bg-[#031221] py-[40px] px-[8px] md:px-[80px] 2xl:px-[100px] flex flex-col gap-[40px] md:gap-[60px] justify-center items-center"
+        className="md:min-h-[400px] bg-[#031221] py-[40px] px-[6px] md:px-[80px] 2xl:px-[100px] flex flex-col gap-[40px] md:gap-[60px] justify-center items-center"
         id="journey"
       >
         <div className="flex flex-col gap-[12px] justify-center items-center">
@@ -69,7 +69,7 @@ const Card = ({ img, heading, text }) => {
   });
   return (
     <div
-      className="flex gap-[5px] md:gap-[10px] xl:min-w-[250px] xl:h-[80px]"
+      className="flex gap-[3px] md:gap-[10px] xl:min-w-[250px] xl:h-[80px]"
       ref={ref}
     >
       <img
