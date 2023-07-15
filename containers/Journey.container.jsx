@@ -1,25 +1,27 @@
 import { Element } from "react-scroll";
 import { Animate, Button, Zoom } from "~/components";
+import { CountUp } from "use-count-up";
+import { useInView } from "react-intersection-observer";
 
 const data = [
   {
     img: "/team.png",
-    heading: "100+",
+    heading: 110,
     text: "Team Members",
   },
   {
     img: "/success.png",
-    heading: "100%",
+    heading: 100,
     text: "Success Rate",
   },
   {
     img: "/complete.png",
-    heading: "1,650+",
+    heading: 1650,
     text: "Delivered Projects",
   },
   {
     img: "/experience.png",
-    heading: "22+",
+    heading: 22,
     text: "Years of Experience",
   },
 ];
@@ -61,18 +63,31 @@ export const Journey = () => {
 };
 
 const Card = ({ img, heading, text }) => {
+  const { ref, inView } = useInView({
+    /* Optional options */
+    threshold: 0,
+  });
   return (
-    <div className="flex gap-[5px] md:gap-[2px] xl:min-w-[250px] xl:h-[80px]">
+    <div
+      className="flex gap-[5px] md:gap-[10px] xl:min-w-[250px] xl:h-[80px]"
+      ref={ref}
+    >
       <img
         src={img}
         alt={text}
-        className="w-[35px] h-[35px] md:w-[unset] object-cover"
+        className="w-[35px] h-[35px] md:w-[unset] md:h-[unset] object-cover"
       />
 
       <div className="flex flex-col gap-[2px] md:gap-[4px]">
         <Animate>
           <h1 className="text-[#fff] font-body text-[14px] md:text-[30px] font-[500]">
-            {heading}
+            <CountUp
+              isCounting={inView}
+              end={heading}
+              duration={2.2}
+              thousandsSeparator=","
+            />
+            {text === "Success Rate" ? "%" : "+"}
           </h1>
         </Animate>
         <Animate>

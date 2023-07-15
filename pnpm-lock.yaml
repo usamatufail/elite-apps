@@ -20,6 +20,7 @@ specifiers:
   react-slick: ^0.29.0
   tailwindcss: 3.3.1
   typescript: ^5.0.4
+  use-count-up: ^3.0.1
   yup: ^1.1.1
 
 dependencies:
@@ -41,6 +42,7 @@ dependencies:
   react-scroll: 1.8.9_biqbaboplfbrettd7655fr4n2y
   react-slick: 0.29.0_biqbaboplfbrettd7655fr4n2y
   tailwindcss: 3.3.1_postcss@8.4.22
+  use-count-up: 3.0.1_react@18.2.0
   yup: 1.1.1
 
 devDependencies:
@@ -3479,6 +3481,23 @@ packages:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
     dependencies:
       punycode: 2.3.0
+    dev: false
+
+  /use-count-up/3.0.1_react@18.2.0:
+    resolution: {integrity: sha512-jlVsXJYje6jh+xwQaCEYrwHoB+nRyillNEmr21bhe9kw7tpRzyrSq9jQs9UOlo+8hCFkuOmjUihL3IjEK/piVg==}
+    peerDependencies:
+      react: '>=16.8.0'
+    dependencies:
+      react: 18.2.0
+      use-elapsed-time: 3.0.2_react@18.2.0
+    dev: false
+
+  /use-elapsed-time/3.0.2_react@18.2.0:
+    resolution: {integrity: sha512-2EY9lJ5DWbAvT8wWiEp6Ztnl46DjXz2j78uhWbXaz/bg3OfpbgVucCAlcN8Bih6hTJfFTdVYX9L6ySMn5py/wQ==}
+    peerDependencies:
+      react: '>=16.8.0'
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /util-deprecate/1.0.2:
