@@ -43,7 +43,7 @@ export const Journey = () => {
             <img src="/line.png" alt="" />
           </Zoom>
         </div>
-        <div className="grid grid-cols-4 gap-[6px] md:flex md:gap-[50px] pb-[20px]">
+        <div className="grid grid-cols-4 gap-[3px] md:flex md:gap-[50px] pb-[20px]">
           {data.map((el, idx) => {
             return (
               <div key={idx}>
@@ -91,7 +91,7 @@ const Card = ({ img, heading, text }) => {
           </h1>
         </Animate>
         <Animate>
-          <p className="text-[#fff] font-body text-[10px] md:text-[16px] font-[400]">
+          <p className="text-[#fff] font-body text-[10px] md:text-[16px] font-[400] w-[54px] md:w-[unset]">
             {text}
           </p>
         </Animate>
