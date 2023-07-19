@@ -80,12 +80,12 @@ export const DesktopNav = () => {
     <nav className="hidden md:block relative h-[80px] top-0 z-10 px-[1rem] w-full md:px-[55px] py-[12px]">
       <div className="flex justify-between items-center w-full">
         <div className="flex gap-[5px]">
-          <img src="/svg/map.icon.svg" alt="map" />
+          {/* <img src="/svg/map.icon.svg" alt="map" />
           <Animate>
             <p className="font-body text-[14px] text-[white] font-normal">
               Laguna Beach, California, US
             </p>
-          </Animate>
+          </Animate> */}
         </div>
         <div className="flex gap-[5px]">
           <img src="/svg/mail.icon.svg" alt="map" />
